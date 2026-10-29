@@ -7,6 +7,7 @@ Run from `backend/` after `evaluate_itemlet.py` has written `results/`:
 | `null_simulation.py` | Table "False promotions in 1,000 simulated data sets" and the cross-fitted rule comparison | `python analysis/null_simulation.py . results results/null_simulation.json` |
 | `gate_variants.py` | Clustered vs row bootstrap vs threshold on the real out-of-fold files | `python analysis/gate_variants.py . results results/gate_variants.json` |
 | `receipt_overhead.py` | Receipt size, replay and verification time (D1) | `python analysis/receipt_overhead.py` |
+| `extended_segments.py` | Segment gate, cross-fitted policies and interval widths for the rich-feature duration and velocity results | `python analysis/extended_segments.py results` |
 | `replay_stress.py` | Replay through the live code path on 30 randomized organizations, with re-signed manipulations | `python analysis/replay_stress.py --runs 30` |
 
 `evaluate_extended.py` (in `backend/`) adds richer leakage-safe duration features, a chronological split, and the
