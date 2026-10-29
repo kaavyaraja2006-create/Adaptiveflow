@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --color-ink: 20 24 43;
+  --color-ink-light: 30 36 64;
+  --color-ink-border: 43 49 86;
+  --color-paper: 245 246 250;
+  --color-surface: 255 255 255;
+  --color-line: 228 230 239;
+  --color-text: 27 31 48;
+  --color-text-muted: 107 112 128;
+  --color-brand: 79 93 255;
+  --color-brand-dim: 238 240 255;
+  --color-brand-deep: 58 70 214;
+  --color-success: 31 157 110;
+  --color-warning: 201 138 27;
+  --color-danger: 209 67 67;
+}
+
+.dark {
+  color-scheme: dark;
+  --color-ink: 10 12 22;
+  --color-ink-light: 22 25 46;
+  --color-ink-border: 38 42 70;
+  --color-paper: 15 17 30;
+  --color-surface: 24 27 45;
+  --color-line: 42 46 74;
+  --color-text: 235 236 245;
+  --color-text-muted: 148 152 176;
+  --color-brand: 108 121 255;
+  --color-brand-dim: 40 44 84;
+  --color-brand-deep: 179 186 255;
+  --color-success: 52 199 145;
+  --color-warning: 224 165 60;
+  --color-danger: 229 100 100;
+}
+
+body { -webkit-font-smoothing: antialiased; }
+
+select {
+  @apply bg-surface text-text;
+}
+
+.card {
+  @apply bg-surface border border-line rounded-xl2 shadow-sm;
+}
+
+.btn-primary {
+  @apply bg-brand text-white text-sm font-medium px-3.5 py-2 rounded-lg hover:bg-brand-deep transition-colors disabled:opacity-40 disabled:cursor-not-allowed;
+}
+
+.btn-ghost {
+  @apply bg-transparent border border-line text-text text-sm font-medium px-3.5 py-2 rounded-lg hover:bg-paper transition-colors disabled:opacity-40;
+}
+
+.btn-danger {
+  @apply bg-white border border-danger text-danger text-sm font-medium px-3.5 py-2 rounded-lg hover:bg-danger hover:text-white transition-colors;
+}
+
+.badge {
+  @apply inline-flex items-center gap-1 text-xs font-medium px-2 py-0.5 rounded-full;
+}
+
+.badge-ai {
+  @apply badge bg-brand-dim text-brand-deep;
+}

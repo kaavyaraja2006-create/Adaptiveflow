@@ -1,0 +1,14 @@
+# Optional extra: uncertainty-aware duration forecasting via NGBoost.
+#
+# The core app (requirements.txt) runs completely fine without this —
+# ai/forecasting_engine.py detects that ngboost isn't installed and falls
+# back to an honest empirical baseline (real historical percentiles,
+# clearly labeled "baseline_empirical") instead of a trained regression
+# model. Install this file if you want the real NGBoost fit:
+#
+#   pip install -r requirements-ml.txt
+#
+# Not bundled by default because it pulls in scipy/pandas/scikit-learn/
+# matplotlib (~300-400MB), which is unnecessary weight for anyone who just
+# wants to run the app and is fine with the baseline forecaster.
+ngboost>=0.5,<0.6
