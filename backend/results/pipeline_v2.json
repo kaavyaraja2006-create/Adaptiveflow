@@ -1,0 +1,35 @@
+{
+  "dataset": "D1 (synthetic seeded organisation)",
+  "score_version": "allocation-score-v2",
+  "active_issues": 41,
+  "recommendations": 41,
+  "escalations_R8": 0,
+  "candidate_entries": 205,
+  "invariant_violations": [],
+  "bigru_status": "trained",
+  "risk_gate": {
+    "gate_version": "baseline-gate-v1.0",
+    "component": "risk",
+    "model": "BiGRU",
+    "baseline": "persistence",
+    "dataset": "D1-seeded (window split)",
+    "metric": "MAE",
+    "n_rows": 27,
+    "evaluated_at": "2026-10-29T16:07:11.162740Z",
+    "rule": "promote iff upper bound of the clustered 95% CI of MAE(model) - MAE(baseline) < 0",
+    "status": "gated_demoted",
+    "reason": "model_does_not_beat_baseline",
+    "model_mae": 0.268898,
+    "baseline_mae": 0.099556,
+    "delta": 0.169343,
+    "ci_low": 0.087875,
+    "ci_high": 0.235686,
+    "p_one_sided": 1.0,
+    "n_clusters": 16,
+    "n_boot": 2000,
+    "seed": 0
+  },
+  "risk_gate_statuses_seen": [
+    "gated_demoted"
+  ]
+}

@@ -1,0 +1,17 @@
+model,segment,n_rows,n_clusters,model_mae,baseline_mae,delta,ci_low,ci_high,p_one_sided,status,verdict_source
+Ridge,sp_14_plus,2378,53,29.741862,35.451036,-5.709173,-14.291856,11.706255,0.353662,gated_demoted,segment_test_holm
+Ridge,sp_1_2,72510,191,19.776746,17.349886,2.42686,1.384544,3.195706,1.0,gated_demoted,segment_test_holm
+Ridge,sp_3_5,35685,183,21.502473,21.905616,-0.403143,-1.572602,0.559449,0.205449,gated_demoted,segment_test_holm
+Ridge,sp_6_13,11394,159,24.058429,26.199507,-2.141078,-4.546408,-0.083203,0.021245,gated_demoted,segment_test_holm
+Random Forest,sp_14_plus,2378,53,32.769232,35.451036,-2.681804,-7.819789,9.139339,0.356661,gated_demoted,segment_test_holm
+Random Forest,sp_1_2,72510,191,18.348919,17.349886,0.999033,0.331657,1.462398,0.99975,gated_demoted,segment_test_holm
+Random Forest,sp_3_5,35685,183,22.094881,21.905616,0.189265,-1.22424,1.291606,0.573107,gated_demoted,segment_test_holm
+Random Forest,sp_6_13,11394,159,24.973642,26.199507,-1.225865,-4.094549,1.386161,0.155961,gated_demoted,segment_test_holm
+Gradient Boosting,sp_14_plus,2378,53,31.548314,35.451036,-3.902722,-8.871002,6.812711,0.313172,gated_demoted,segment_test_holm
+Gradient Boosting,sp_1_2,72510,191,18.688996,17.349886,1.33911,0.58888,1.847039,1.0,gated_demoted,segment_test_holm
+Gradient Boosting,sp_3_5,35685,183,22.279772,21.905616,0.374156,-1.032292,1.446895,0.677581,gated_demoted,segment_test_holm
+Gradient Boosting,sp_6_13,11394,159,24.879195,26.199507,-1.320312,-4.143237,1.335691,0.142964,gated_demoted,segment_test_holm
+NGBoost (AdaptiveFlow),sp_14_plus,2378,53,31.590059,35.451036,-3.860977,-8.591358,6.684819,0.298925,gated_demoted,segment_test_holm
+NGBoost (AdaptiveFlow),sp_1_2,72510,191,19.125679,17.349886,1.775793,0.903281,2.366851,1.0,gated_demoted,segment_test_holm
+NGBoost (AdaptiveFlow),sp_3_5,35685,183,22.054404,21.905616,0.148788,-1.228201,1.214981,0.56036,gated_demoted,segment_test_holm
+NGBoost (AdaptiveFlow),sp_6_13,11394,159,24.396334,26.199507,-1.803173,-4.435192,0.420153,0.050737,gated_demoted,segment_test_holm

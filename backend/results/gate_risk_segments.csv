@@ -1,0 +1,17 @@
+model,segment,n_rows,n_clusters,model_mae,baseline_mae,delta,ci_low,ci_high,p_one_sided,status,verdict_source
+Ridge regression,elevated,1276,34,0.104488,0.063834,0.040654,0.0326,0.050676,1.0,gated_demoted,segment_test_holm
+Ridge regression,low,3127,56,0.082017,0.06262,0.019397,0.016682,0.021991,1.0,gated_demoted,segment_test_holm
+Ridge regression,moderate,1585,49,0.119495,0.097918,0.021577,0.011304,0.030631,0.99975,gated_demoted,segment_test_holm
+Ridge regression,severe,797,18,0.107036,0.035349,0.071687,0.056529,0.083038,1.0,gated_demoted,segment_test_holm
+Random Forest,elevated,1276,34,0.083413,0.063834,0.01958,0.013552,0.025764,1.0,gated_demoted,segment_test_holm
+Random Forest,low,3127,56,0.066935,0.06262,0.004315,0.002375,0.005996,1.0,gated_demoted,segment_test_holm
+Random Forest,moderate,1585,49,0.101338,0.097918,0.00342,-0.003907,0.010256,0.827543,gated_demoted,segment_test_holm
+Random Forest,severe,797,18,0.058724,0.035349,0.023375,0.018028,0.029021,1.0,gated_demoted,segment_test_holm
+Gradient Boosting,elevated,1276,34,0.058345,0.063834,-0.005489,-0.016249,0.003004,0.104724,gated_demoted,segment_test_holm
+Gradient Boosting,low,3127,56,0.054127,0.06262,-0.008493,-0.010388,-0.006698,0.00025,gated_promoted,segment_test_holm
+Gradient Boosting,moderate,1585,49,0.066503,0.097918,-0.031414,-0.037926,-0.024874,0.00025,gated_promoted,segment_test_holm
+Gradient Boosting,severe,797,18,0.043058,0.035349,0.00771,-0.005708,0.018749,0.846288,gated_demoted,segment_test_holm
+BiGRU (AdaptiveFlow),elevated,1276,34,0.105517,0.063834,0.041683,0.033212,0.052933,1.0,gated_demoted,segment_test_holm
+BiGRU (AdaptiveFlow),low,3127,56,0.15722,0.06262,0.0946,0.07546,0.115068,1.0,gated_demoted,segment_test_holm
+BiGRU (AdaptiveFlow),moderate,1585,49,0.127872,0.097918,0.029955,0.016434,0.042514,1.0,gated_demoted,segment_test_holm
+BiGRU (AdaptiveFlow),severe,797,18,0.161704,0.035349,0.126355,0.066507,0.191574,1.0,gated_demoted,segment_test_holm

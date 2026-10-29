@@ -1,0 +1,5 @@
+model,baseline,model_mae,baseline_mae,delta,ci_low,ci_high,n_clusters,status
+Ridge,Training median,20.875938,19.862437,1.0135,0.181315,1.575068,196,gated_demoted
+Random Forest,Training median,20.344936,19.862437,0.482499,-0.324406,1.052651,196,gated_demoted
+Gradient Boosting,Training median,20.568581,19.862437,0.706144,-0.103562,1.269426,196,gated_demoted
+NGBoost (AdaptiveFlow),Training median,20.717959,19.862437,0.855522,-0.021633,1.443024,196,gated_demoted

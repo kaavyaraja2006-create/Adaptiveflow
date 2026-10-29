@@ -1,0 +1,5 @@
+model,baseline,model_mae,baseline_mae,delta,ci_low,ci_high,n_clusters,status
+Ridge regression,Persistence (today's risk),0.097937,0.067891,0.030046,0.025706,0.034922,58,gated_demoted
+Random Forest,Persistence (today's risk),0.077106,0.067891,0.009216,0.007308,0.011205,58,gated_demoted
+Gradient Boosting,Persistence (today's risk),0.056511,0.067891,-0.011379,-0.014603,-0.007619,58,gated_promoted
+BiGRU (AdaptiveFlow),Persistence (today's risk),0.141167,0.067891,0.073277,0.058825,0.090355,58,gated_demoted

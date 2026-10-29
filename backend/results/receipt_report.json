@@ -1,0 +1,81 @@
+{
+  "dataset": "D1 (synthetic seeded organisation)",
+  "absent_employee_id": 2,
+  "decisions_recorded": 7,
+  "decisions_verified": 7,
+  "replay_checks_run": 476,
+  "decisions_with_concurrent_absence_context": 4,
+  "risk_gate_status": "gated_demoted",
+  "attacks": [
+    {
+      "attack": "Flip gate verdict in receipt",
+      "attacker": "no key",
+      "expected": "detected (hash)",
+      "observed": "CHAIN_BROKEN",
+      "detected": true
+    },
+    {
+      "attack": "Flip gate verdict and re-sign",
+      "attacker": "key holder",
+      "expected": "detected (replay: gate enforcement)",
+      "observed": "REPLAY_MISMATCH ['segment_gate_consistent']",
+      "detected": true
+    },
+    {
+      "attack": "Serve demoted model's value and re-sign",
+      "attacker": "key holder",
+      "expected": "detected (replay: gate enforcement)",
+      "observed": "REPLAY_MISMATCH",
+      "detected": true
+    },
+    {
+      "attack": "Change recommended person and re-sign",
+      "attacker": "key holder",
+      "expected": "detected (replay: decision)",
+      "observed": "REPLAY_MISMATCH",
+      "detected": true
+    },
+    {
+      "attack": "Change a candidate input and re-sign",
+      "attacker": "key holder",
+      "expected": "detected (replay: candidate)",
+      "observed": "REPLAY_MISMATCH",
+      "detected": true
+    },
+    {
+      "attack": "Change a rule threshold and re-sign",
+      "attacker": "key holder",
+      "expected": "detected (replay: rules hash)",
+      "observed": "REPLAY_MISMATCH",
+      "detected": true
+    },
+    {
+      "attack": "Consistent fabrication of inputs+outputs, re-signed",
+      "attacker": "key holder",
+      "expected": "NOT detected (limitation; needs external anchor)",
+      "observed": "VERIFIED",
+      "detected": false
+    },
+    {
+      "attack": "Edit actor column",
+      "attacker": "DB write access",
+      "expected": "detected (columns)",
+      "observed": "COLUMNS_ALTERED",
+      "detected": true
+    },
+    {
+      "attack": "Back-date timestamp column",
+      "attacker": "DB write access",
+      "expected": "detected (columns)",
+      "observed": "COLUMNS_ALTERED",
+      "detected": true
+    },
+    {
+      "attack": "Scoring code changed since decision",
+      "attacker": "developer",
+      "expected": "reported (fingerprint)",
+      "observed": "REPLAY_MATCH, fingerprint_matches=False",
+      "detected": true
+    }
+  ]
+}
