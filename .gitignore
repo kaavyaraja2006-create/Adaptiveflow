@@ -180,3 +180,5 @@ exports/
 generated/
 output/
 *.generated.*
+
+*.tsbuildinfo
